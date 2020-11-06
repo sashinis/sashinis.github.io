@@ -50,3 +50,9 @@ body {
 .bridge{
 	background-color:black !important;
 }
+.sharkl{
+	background-image:url("images/sharkl.png");
+}
+.sharkr{
+	background-image:url("images/sharkr.png");
+}
