@@ -1,11 +1,11 @@
 
 const levels = [  
      // level 0
-    ["ish", "rock", "", "fish", "",
-"fenceside",  "rock", "", "", "rider",
-"", "tree", "animate", "animate", "animate",
-"", "water" , "", "", "",
-"", "fence", "", "horseup", ""],
+    ["fish", "", "", "", "",
+"",  "", "", "", "",
+"", "diver", "animate", "animate", "animate",
+"", "" , "", "", "",
+"", "seaweed", "", "", "hat"],
 
 //level 1
  ["flag", "rock", "", "", "",
@@ -42,7 +42,7 @@ riderOn = false;
 //load board
 for(i = 0; i< gridBoxes.length; i++) {
 gridBoxes[i].className = levelMap[i];
-if (levelMap[i].includes("horse")) currentLocationOfHorse = i;
+if (levelMap[i].includes("shark")) currentLocationOfHorse = i;
 }//for
 animateBoxes = document.querySelectorAll(".animate");
 
@@ -60,16 +60,16 @@ if (boxes.length <= 0) { return;}
 
 //update images
 if (direction == "right") {
-boxes[index].classList.add("enemyright");
+boxes[index].classList.add("sharkr");
 }else {
-   boxes[index].classList.add("enemyleft");
+   boxes[index].classList.add("sharkl");
      }
 
 //remove images from other boxes
 for(i = 0; i < boxes.length; i++){
 if(i != index){
-boxes[i].classList.remove("enemyleft");
-boxes[i].classList.remove("enemyright");
+boxes[i].classList.remove("sharkl");
+boxes[i].classList.remove("sharkr");
 }
 }//for
 
@@ -98,5 +98,3 @@ index--;
   }, 750);
 
 }// animateEnemy
-
-ff
