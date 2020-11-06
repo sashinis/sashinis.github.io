@@ -1,0 +1,52 @@
+body {
+	background-color:black;
+}
+
+#gameBoard {
+	border: 1px solid black;
+	display: grid;
+	background-image:url("images/water.jpg");
+	background-size:cover;
+	background-repeat:no-repeat;
+	grid-template-columns:120px 120px 120px 120px 120px;
+	grid-template-rows:120px 120px 120px 120px 120px;
+	justify-content:center;
+	width:600px;
+	height:600px;
+	margin-left:auto;
+	margin-right:auto;
+
+}
+
+#gameBoard div{
+	background-repeat:no-repeat;
+}
+
+.diver{
+	background-image:url("images/scubadiver.png");
+}
+
+.fish{
+	background-image:url("images/fish.png");
+}
+
+.seaweed{
+	background-image:url("images/seaweed.png");
+}
+
+.bag{
+	background-image:url("images/bag.png");
+}
+
+.shark{
+	background-image:url("images/shark.png");
+}
+
+.hat{
+	background-image:url("images/hat.png");
+}
+
+
+.bridge{
+	background-color:black !important;
+}
