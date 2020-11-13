@@ -1,8 +1,10 @@
 <!DOCTYPE html>
   <html lang="en">
+      
   <head>
+  <link rel="icon" type="image/png" href="images/fishhat.png">
     <meta charset="utf-8">
-    <title>Note Game</title>
+    <title>Game</title>
     
     <!-- include an external style sheet -->
     <link rel="stylesheet" href="style.css">  
@@ -43,9 +45,29 @@
 		<div></div>
   
 		</div> <!-- game Board-->
-  <div class="message" id="lose">You Lose</div>
+  
+  <div id="welcomeScreen">
+    <h1 class="welcomeTitle">Welcome to Micheal and Sashini's Adventure&reg;</h1>
+    <p class="welcome">Simon is trying to get home but can't leave without his hat.
+	He has many obstacles in his way like rocks,
+	pesky divers and garbage. 
+	Simon is very insecure and cannot go through seaweed without his hat. 
+	Help Simon find his hat and get home without running into the evil shark. Have fun!</p>
+    <button class="newbutton" onclick="loadLevel(newGame)">Click to Start</button>
+  </div>
+  
+ <div id="gameOver">
+ <h1 class="welcomeTitle">You did it, Simon has returned home!</h1>
+  <button class="newbutton" onclick="reLoadGame()">Play again</button>
+  </div>
+  
+  <div class="message" id="lose">You have lost. 
+      <button class="newbutton" onclick="reLoadGame()">Try again</button>
+  </div>
+  
   <div class="message" id="levelup">Next Level</div>
-    
+  
+  
    <script src="game.js"></script>
   </body>
   
